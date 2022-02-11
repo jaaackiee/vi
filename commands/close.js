@@ -13,10 +13,15 @@ module.exports = {
             message.channel.delete();
         }, 10000);
 
+        const embed = {
+            color: 0x2f3136,
+            description: "\`⨳\` ﹒ticket closed in [xel's portal](https://discord.gg/mv2VT7t3BA)\n｡ reason :\n> " + text
+        }
+
         const user = message.client.users.cache.get(message.channel.topic);
         user.send({
             custom: true,
-            content: "Your ticket has been closed!\n\`\`\`" + text + "\`\`\`"
+            embeds: [embed]
         });
 
         return {
