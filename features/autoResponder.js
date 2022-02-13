@@ -1,9 +1,9 @@
 module.exports = (client) => {
     client.on("messageCreate", (message) => {
-        if (message.channel.parentId === "907815041850544129") {
+        if (message.channel.parentId !== "907815041850544129") {
             return;
         }
-        
+
         if (message.content.toLowerCase().includes("caitlyn")) {
             const embed = {
                 color: 0x2f3136,
