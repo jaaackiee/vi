@@ -1,6 +1,6 @@
 module.exports = (client) => {
     client.on("messageCreate", (message) => {
-        if (!message.channel.parentId.equals("907815041850544129")) {
+        if (!message.channel.parentId === "907815041850544129") {
             return;
         }
         if (message.content.toLowerCase().contains("caitlyn")) {
