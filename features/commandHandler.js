@@ -86,7 +86,7 @@ module.exports = (client) => {
             });
         }
 
-        if (options.modOnly && !message.member.hasPermission("BAN_MEMBERS")) {
+        if (options.modOnly && !message.member.permissions.has("BAN_MEMBERS")) {
             return message.reply({
                 custom: true,
                 content: "Only moderators can execute that command!"
