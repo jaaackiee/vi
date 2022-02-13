@@ -4,6 +4,13 @@ module.exports = {
     modOnly: true,
     guildOnly: true,
     callback: (message, args, text) => {
-        message.channel.setName(args.join("-"));
+        text = args.join("-")
+        message.channel.setName(text)
+
+        return {
+            custom: true,
+            content: "channel name changed to: <#" + message.channel.id + ">!",
+            ephemeral: true
+        }
     }
 }
