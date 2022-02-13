@@ -3,9 +3,9 @@ module.exports = {
     minArgs: 1,
     modOnly: true,
     guildOnly: true,
-    callback: (message, args, text) => {
+    callback: async (message, args, text) => {
         text = args.join("-")
-        message.channel.setName(text)
+        await message.channel.setName(text)
 
         return {
             custom: true,
