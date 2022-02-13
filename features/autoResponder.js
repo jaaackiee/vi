@@ -3,7 +3,8 @@ module.exports = (client) => {
         if (message.channel.parentId === "907815041850544129") {
             return;
         }
-        if (message.content.toLowerCase().contains("caitlyn")) {
+        
+        if (message.content.toLowerCase().includes("caitlyn")) {
             const embed = {
                 color: 0x2f3136,
                 title: "pls make embed @gav",
