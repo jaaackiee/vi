@@ -40,10 +40,6 @@ module.exports = async (client) => {
                 {
                     id: "909914779190165504",
                     allow: ["VIEW_CHANNEL"]
-                },
-                {
-                    id: "909914779190165504",
-                    allow: ["VIEW_CHANNEL"]
                 }
             ]
         })
