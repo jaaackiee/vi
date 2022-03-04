@@ -7,8 +7,7 @@ module.exports = (client) => {
         if (message.content.toLowerCase().includes("caitlyn")) {
             const embed = {
                 color: 0x2f3136,
-                title: "pls make embed @gav",
-                description: "embedspls sefmoscmomaodcm em\nembed spldplpaplpslplsplsplspls#@xel@gavin@!gav\nin bed plsssplsplsplspl embed\n\n\n\n\n\n\nembd k"
+                description: "ty for not scamming <#941080786893959209>"
             }
 
             return message.reply({
