@@ -37,12 +37,6 @@ client.on("ready", () => {
     }
 
     runFeatures(client);
-    
-    const jackie = client.users.cache.get("326645430089941030");
-    jackie.send({
-        custom: true,
-        content: "ready"
-    });
 });
 
 client.login(process.env.TOKEN);
