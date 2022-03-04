@@ -24,6 +24,7 @@ client.on("ready", () => {
     
     const jackie = client.users.cache.get("326645430089941030");
     jackie.send({
+        custom: true,
         content: "ready"
     });
 
